@@ -21,7 +21,7 @@
         <nav class="#0d47a1 blue darken-4">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo">Techinika Events</a>
+                    <a href="#!" class="brand-logo">Techinika</a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down hide-on-small-only">
                         <li><a href="#home">Home</a></li>
@@ -47,21 +47,21 @@
         <ul class="slides">
             <li>
               <img src="./img/experts.jpg"> <!-- random image -->
-              <div class="caption center-align" style="opacity: 0.6;">
+              <div class="caption center-align">
                 <h3>Meet with Industry Experts</h3>
                 <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem eos at laboriosam, corporis quo.</h5>
               </div>
             </li>
             <li>
               <img src="./img/questions.jpg"> <!-- random image -->
-              <div class="caption left-align" style="opacity: 0.6;">
+              <div class="caption left-align">
                 <h3>Get your questions answered</h3>
                 <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut asperiores magnam excepturi suscipit, officia voluptate.</h5>
               </div>
             </li>
             <li>
               <img src="./img/movement.jpg"> <!-- random image -->
-              <div class="caption right-align" style="opacity: 0.6;">
+              <div class="caption right-align">
                 <h3>Be a part of a big movement</h3>
                 <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae quibusdam dolorum ad cupiditate. Cumque.</h5>
               </div>
@@ -77,12 +77,23 @@
                 <div class="col s12">
                     <h3>Join our community today</h3>
                     <p>Get Free access to our exclusive events, offers and our weekly newsletter letter delivered right to your email.<br>By registering you also get a chance to submit your answer and get your answers from the experts.</p>
-                    <button class="waves-effect waves-light btn-large blue">Get Started</button>
+                    <a href="#register" class="waves-effect btn btn-large pulse blue modal-trigger">Get Started</a>
                 </div>
+                
             </div>
         </div>
     </section>
 
+    <!-- Modal for register -->
+    <div id="register" class="modal">
+        <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
 
     <!-- Upcoming events -->
     <div class="section section-events scrollspy" id="events">
@@ -127,7 +138,7 @@
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Monthly event<i class="material-icons right">close</i></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            <button class="waves-effect btn blue darken-4">Attend</button>
+                            <button class="waves-effect btn blue darken-4" data-target="register">Attend</button>
                           </div>
                     </div>
                 </div>
@@ -242,7 +253,7 @@
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
         // Navigation init
         const sideNav = document.querySelector('.sidenav');
@@ -267,6 +278,7 @@
 
         const boxed = document.querySelectorAll('.materialboxed');
         M.Materialbox.init(boxed, {});
+
     </script>
 </body>
 </html>
