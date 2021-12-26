@@ -4,6 +4,12 @@
     font-family: 'Nunito', sans-serif !important;
 }
 
+.b-cap {
+    background-color: black !important;
+    opacity: 0.6;
+    padding: 20px;
+}
+
 
 .section-follow .fab {
     margin: 5px 10px;
